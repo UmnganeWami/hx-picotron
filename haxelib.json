@@ -1,6 +1,6 @@
 {
 	"name": "hx-picotron",
-	"url": "http://yal.cc",
+	"url": "https://github.com/UmnganeWami/hx-picotron",
 	"license": "MIT",
 	"tags": ["lua", "retro", "picotron"],
 	"description": "Lua externs for the Picotron fantasy console.",
