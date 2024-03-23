@@ -4,14 +4,14 @@ package picotron;
 import lua.Table;
 
 class Mouse {
-	var x:Int;
-	var y:Int;
+	var x:Float;
+	var y:Float;
 	var button:Int;
 	// some mice have two axis of scrolling i guess?
-	var wheelX:Int;
-	var wheelY:Int;
+	var wheelX:Float;
+	var wheelY:Float;
 
-	public function new(x:Int, y:Int, button:Int, wheelX:Int, wheelY:Int) {
+	public function new(x:Float, y:Float, button:Int, wheelX:Float, wheelY:Float) {
 		this.x = x;
 		this.y = y;
 		this.button = button;
