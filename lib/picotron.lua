@@ -1,5 +1,5 @@
 -- https://www.lexaloffle.com/bbs/?tid=140784
-function require(name)
+function require_lua(name)
     if _modules == nil then
         _modules={}
     end
@@ -80,7 +80,8 @@ end
 
 -- mmm i sure love messing with varibles i probably shouldnt be!
 _G = tableMerge(_G, {
-    xpcall = xpcall_lua
+    xpcall = xpcall_lua,
+    require = require_lua
 })
 
 _G.math.pow = pow

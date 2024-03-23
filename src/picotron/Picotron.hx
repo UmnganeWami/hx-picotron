@@ -52,9 +52,13 @@ extern class Picotron {
 	public static function mv(src:String, dest:String):Void;
 	public static function cp(src:String, dest:String):Void;
 	public static function cd(dir:String):Void;
+
+	public static function map(x:Int, y:Int);
+	public static function camera(x:Int, y:Int);
 	/*public static function ls(dir:String):lua.Table<Int, Dynamic>;
 		@:native("ls")
-		public static function dir(dir:String):lua.Table<Int, Dynamic>; */
+		public static function dir(dir:String):lua.Table<Int, Dynamic>; 
+	 */
 }
 
 @:native("")
