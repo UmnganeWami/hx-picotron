@@ -26,17 +26,17 @@ extern class Picotron {
 	// TODO: wtf is src?
 	// its either an index, currently loaded sprites, or USERDATA stuffs.
 	// NEW TODO: idk, maybe overloads?
-	public static function sspr(src:Dynamic, x0:Int, y0:Int, w0:Int, h0:Int, x1:Int, y1:Int, ?w1:Int, ?w2:Int):Void;
-	public static function spr(index:Int, x:Int, y:Int):Void;
+	public static function sspr(src:Dynamic, x0:Float, y0:Float, w0:Float, h0:Float, x1:Float, y1:Float, ?w1:Float, ?w2:Float):Void;
+	public static function spr(index:Int, x:Float, y:Float):Void;
 
-	public static function circ(x:Int, y:Int, r:Int, ?col:Int = 0):Void;
-	public static function circfill(x:Int, y:Int, r:Int, ?col:Int = 0):Void;
+	public static function circ(x:Float, y:Float, r:Float, ?col:Int = 0):Void;
+	public static function circfill(x:Float, y:Float, r:IFloatnt, ?col:Int = 0):Void;
 
-	public static function oval(x0:Int, y0:Int, x1:Int, y1:Int, ?col:Int = 0):Void;
-	public static function ovalfill(x0:Int, y0:Int, x1:Int, y1:Int, ?col:Int = 0):Void;
+	public static function oval(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
+	public static function ovalfill(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
 
-	public static function rect(x0:Int, y0:Int, x1:Int, y1:Int, ?col:Int = 0):Void;
-	public static function rectfill(x0:Int, y0:Int, x1:Int, y1:Int, ?col:Int = 0):Void;
+	public static function rect(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
+	public static function rectfill(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
 
 	public static function sfx(index:Int):Void;
 	public static function music(index:Int):Void;
@@ -53,8 +53,8 @@ extern class Picotron {
 	public static function cp(src:String, dest:String):Void;
 	public static function cd(dir:String):Void;
 
-	public static function map(x:Int, y:Int);
-	public static function camera(x:Int, y:Int);
+	public static function map(x:Float, y:Float);
+	public static function camera(x:Float, y:Float);
 	/*public static function ls(dir:String):lua.Table<Int, Dynamic>;
 		@:native("ls")
 		public static function dir(dir:String):lua.Table<Int, Dynamic>; 
