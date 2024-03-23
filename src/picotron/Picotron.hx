@@ -47,8 +47,6 @@ extern class Picotron {
 	public static function key(keyName:String):Bool;
 	public static function keyp(keyName:String):Bool;
 
-	public static function map(x:Int, y:Int):Void;
-
 	public static function mv(src:String, dest:String):Void;
 	public static function cp(src:String, dest:String):Void;
 	public static function cd(dir:String):Void;
