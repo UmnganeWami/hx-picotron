@@ -1,6 +1,9 @@
 package picotron;
 
 #if lua
+// DEFAULT COLOR IS 7
+// DEFAULT X & Y IS 0
+
 @:native("")
 extern class Picotron {
 	public static var _update:Void->Void;
@@ -11,7 +14,7 @@ extern class Picotron {
 	// idk if anyone'll *really* use this, but meh.
 	public static function include(filePath:String):Void;
 	// public static function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 1):Void;
-	public static inline function print(thing:Dynamic, ?x:Float = null, ?y:Float = null, ?col:Int = null):Void {
+	public static inline function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 7):Void {
 		if (!(thing is String)) {
 			thing = Std.string(thing);
 		}
@@ -27,16 +30,16 @@ extern class Picotron {
 	// its either an index, currently loaded sprites, or USERDATA stuffs.
 	// NEW TODO: idk, maybe overloads?
 	public static function sspr(src:Dynamic, x0:Float, y0:Float, w0:Float, h0:Float, x1:Float, y1:Float, ?w1:Float, ?w2:Float):Void;
-	public static function spr(index:Int, x:Float, y:Float):Void;
+	public static function spr(index:Int, x:Float = 0, y:Float = 0):Void;
 
-	public static function circ(x:Float, y:Float, r:Float, ?col:Int = 0):Void;
-	public static function circfill(x:Float, y:Float, r:Float, ?col:Int = 0):Void;
+	public static function circ(x:Float = 0, y:Float = 0, r:Float = 2, ?col:Int = 7):Void;
+	public static function circfill(x:Float = 0, y:Float = 0, r:Float = 2, ?col:Int = 7):Void;
 
-	public static function oval(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
-	public static function ovalfill(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
+	public static function oval(x0:Float = 0, y0:Float = 0, x1:Float, y1:Float, ?col:Int = 7):Void;
+	public static function ovalfill(x0:Float = 0, y0:Float = 0, x1:Float, y1:Float, ?col:Int = 7):Void;
 
-	public static function rect(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
-	public static function rectfill(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
+	public static function rect(x0:Float = 0, y0:Float = 0, x1:Float, y1:Float, ?col:Int = 7):Void;
+	public static function rectfill(x0:Float = 0, y0:Float = 0, x1:Float, y1:Float, ?col:Int = 7):Void;
 
 	public static function sfx(index:Int):Void;
 	public static function music(index:Int):Void;
@@ -61,6 +64,6 @@ extern class Picotron {
 
 @:native("")
 extern class INTERNAL_Picotron {
-	public static function print(thing:Dynamic, ?x:Float = null, ?y:Float = null, ?col:Int = null):Void;
+	public static function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 13):Void;
 }
 #end
