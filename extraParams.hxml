@@ -1,0 +1,4 @@
+
+-D lua-vanilla
+-D lua_ver 5.4
+--macro haxe.macro.Compiler.includeFile("lib/picotron.lua")

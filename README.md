@@ -1,5 +1,5 @@
 # TO INSTALL  
-run (TODO: link.)  
+run `haxelib git hx-picotron https://github.com/UmnganeWami/hx-picotron`  
 
 # TO SETUP A PROJECT  
 create a project how you usually would with haxe  
