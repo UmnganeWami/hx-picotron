@@ -11,9 +11,6 @@ extern class Picotron {
 	public static var _init:Void->Void;
 	// @:native("trace")
 	// public static function Ptrace(stuff:String):Void;
-	// idk if anyone'll *really* use this, but meh.
-	public static function include(filePath:String):Void;
-	// public static function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 1):Void;
 	public static inline function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 7):Void {
 		if (!(thing is String)) {
 			thing = Std.string(thing);
@@ -50,16 +47,11 @@ extern class Picotron {
 	public static function key(keyName:String):Bool;
 	public static function keyp(keyName:String):Bool;
 
-	public static function mv(src:String, dest:String):Void;
-	public static function cp(src:String, dest:String):Void;
-	public static function cd(dir:String):Void;
-
 	public static function map(x:Float, y:Float):Void;
 	public static function camera(x:Float, y:Float):Void;
-	/*public static function ls(dir:String):lua.Table<Int, Dynamic>;
-		@:native("ls")
-		public static function dir(dir:String):lua.Table<Int, Dynamic>; 
-	 */
+
+	public static function get_clipboard():String;
+	public static function set_clipboard(clip:String):Void;
 }
 
 @:native("")
