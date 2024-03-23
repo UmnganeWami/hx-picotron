@@ -30,7 +30,7 @@ extern class Picotron {
 	public static function spr(index:Int, x:Float, y:Float):Void;
 
 	public static function circ(x:Float, y:Float, r:Float, ?col:Int = 0):Void;
-	public static function circfill(x:Float, y:Float, r:IFloatnt, ?col:Int = 0):Void;
+	public static function circfill(x:Float, y:Float, r:Float, ?col:Int = 0):Void;
 
 	public static function oval(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
 	public static function ovalfill(x0:Float, y0:Float, x1:Float, y1:Float, ?col:Int = 0):Void;
