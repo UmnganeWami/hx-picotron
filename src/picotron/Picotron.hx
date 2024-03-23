@@ -64,6 +64,6 @@ extern class Picotron {
 
 @:native("")
 extern class INTERNAL_Picotron {
-	public static function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 13):Void;
+	public static function print(thing:Dynamic, ?x:Float = 0, ?y:Float = 0, ?col:Int = 7):Void;
 }
 #end
