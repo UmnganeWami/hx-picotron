@@ -52,6 +52,8 @@ extern class Picotron {
 
 	public static function get_clipboard():String;
 	public static function set_clipboard(clip:String):Void;
+
+	public static function rnd(?range:Float = 1):Float;
 }
 
 @:native("")
