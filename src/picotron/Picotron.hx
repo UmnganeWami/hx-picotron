@@ -54,6 +54,8 @@ extern class Picotron {
 	public static function set_clipboard(clip:String):Void;
 
 	public static function rnd(?range:Float = 1):Float;
+
+	public static function poke(addr:Int, value:Int):Void;
 }
 
 @:native("")
