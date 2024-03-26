@@ -48,6 +48,9 @@ extern class Picotron {
 	public static function keyp(keyName:String):Bool;
 
 	public static function map(x:Float, y:Float):Void;
+	public static function mget(x:Float, y:Float):Int;
+	public static function mset(x:Float, y:Float, ind:Int):Void;
+	public static function map(x:Float, y:Float):Void;
 	public static function camera(x:Float, y:Float):Void;
 
 	public static function get_clipboard():String;
