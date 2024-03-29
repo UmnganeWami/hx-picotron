@@ -45,8 +45,8 @@ extern class Picotron {
 	public static function btn(index:Int):Bool;
 	public static function btnp(index:Int):Bool;
 
-	public static function key(keyName:String):Bool;
-	public static function keyp(keyName:String):Bool;
+	public static function key(?keyName:String):Bool;
+	public static function keyp(?keyName:String):Bool;
 
 	public static function map(x:Float, y:Float):Void;
 	public static function mget(x:Float, y:Float, layer:Int):Int;
@@ -56,9 +56,11 @@ extern class Picotron {
 	public static function get_clipboard():String;
 	public static function set_clipboard(clip:String):Void;
 
+	public static function peektext():String;
+	public static function readtext():String;
 	public static function rnd(?range:Float = 1):Float;
 
-	public static function poke(addr:Int, value:Int):Void;
+	public static function poke(addr:Int, ?value:Int = null):Void;
 }
 
 @:native("")
