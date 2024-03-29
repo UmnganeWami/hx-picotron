@@ -45,8 +45,8 @@ extern class Picotron {
 	public static function btn(index:Int):Bool;
 	public static function btnp(index:Int):Bool;
 
-	public static function key(?keyName:String):Bool;
-	public static function keyp(?keyName:String):Bool;
+	public static function key(keyName:String):Bool;
+	public static function keyp(keyName:String):Bool;
 
 	public static function map(x:Float, y:Float):Void;
 	public static function mget(x:Float, y:Float, layer:Int):Int;
