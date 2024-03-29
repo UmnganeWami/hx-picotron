@@ -28,6 +28,7 @@ extern class Picotron {
 	// NEW TODO: idk, maybe overloads?
 	public static function sspr(src:Dynamic, x0:Float, y0:Float, w0:Float, h0:Float, x1:Float, y1:Float, ?w1:Float, ?w2:Float):Void;
 	public static function spr(index:Int, x:Float = 0, y:Float = 0):Void;
+	public static function tline3d(src:Dynamic, x0:Float, y0:Float, x1:Float, y1:Float, u0:Float, v0:Float, u1:Float, v1:Float, w0:Float, w1:Float):Void;
 
 	public static function circ(x:Float = 0, y:Float = 0, r:Float = 2, ?col:Int = 7):Void;
 	public static function circfill(x:Float = 0, y:Float = 0, r:Float = 2, ?col:Int = 7):Void;
@@ -48,9 +49,8 @@ extern class Picotron {
 	public static function keyp(keyName:String):Bool;
 
 	public static function map(x:Float, y:Float):Void;
-	public static function mget(x:Float, y:Float):Int;
-	public static function mset(x:Float, y:Float, ind:Int):Void;
-	public static function map(x:Float, y:Float):Void;
+	public static function mget(x:Float, y:Float, layer:Int):Int;
+	public static function mset(x:Float, y:Float, ind:Int, layer:Int):Void;
 	public static function camera(x:Float, y:Float):Void;
 
 	public static function get_clipboard():String;
